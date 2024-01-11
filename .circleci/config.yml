@@ -1,0 +1,9 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: naoyer/sample-git:latest
+    environment:
+      GIT_SSH_COMMAND: ssh -vvv
+    steps:
+      - checkout
